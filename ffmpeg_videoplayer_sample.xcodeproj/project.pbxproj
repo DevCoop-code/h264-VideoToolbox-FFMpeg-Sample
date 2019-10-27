@@ -10,6 +10,13 @@
 		7828C6142365A8AE00878001 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C6132365A8AE00878001 /* libavutil.a */; };
 		7828C6162365A8BC00878001 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C6152365A8BC00878001 /* libavformat.a */; };
 		7828C6182365A8CC00878001 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C6172365A8CC00878001 /* libavcodec.a */; };
+		7828C61B2365BEE400878001 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C61A2365BEE400878001 /* VideoToolbox.framework */; };
+		7828C61D2365BF1200878001 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C61C2365BF1200878001 /* AudioToolbox.framework */; };
+		7828C61F2365BF1A00878001 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C61E2365BF1A00878001 /* CoreMedia.framework */; };
+		7828C6212365BF2000878001 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C6202365BF2000878001 /* CoreVideo.framework */; };
+		7828C6232365BF6F00878001 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C6222365BF5B00878001 /* libbz2.1.0.tbd */; };
+		7828C6252365BF8900878001 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C6242365BF7D00878001 /* libiconv.2.4.0.tbd */; };
+		7828C6272365BFA400878001 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C6262365BF9700878001 /* libz.1.1.3.tbd */; };
 		78D2FF972365858200D22CBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D2FF962365858200D22CBC /* AppDelegate.m */; };
 		78D2FF9A2365858200D22CBC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D2FF992365858200D22CBC /* SceneDelegate.m */; };
 		78D2FF9D2365858200D22CBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D2FF9C2365858200D22CBC /* ViewController.m */; };
@@ -143,6 +150,13 @@
 		7828C6132365A8AE00878001 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
 		7828C6152365A8BC00878001 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
 		7828C6172365A8CC00878001 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
+		7828C61A2365BEE400878001 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		7828C61C2365BF1200878001 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7828C61E2365BF1A00878001 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7828C6202365BF2000878001 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		7828C6222365BF5B00878001 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		7828C6242365BF7D00878001 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		7828C6262365BF9700878001 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
 		78D2FF922365858200D22CBC /* ffmpeg_videoplayer_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ffmpeg_videoplayer_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D2FF952365858200D22CBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78D2FF962365858200D22CBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -186,7 +200,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7828C6232365BF6F00878001 /* libbz2.1.0.tbd in Frameworks */,
+				7828C6212365BF2000878001 /* CoreVideo.framework in Frameworks */,
+				7828C6272365BFA400878001 /* libz.1.1.3.tbd in Frameworks */,
+				7828C61F2365BF1A00878001 /* CoreMedia.framework in Frameworks */,
+				7828C61B2365BEE400878001 /* VideoToolbox.framework in Frameworks */,
 				7828C6142365A8AE00878001 /* libavutil.a in Frameworks */,
+				7828C6252365BF8900878001 /* libiconv.2.4.0.tbd in Frameworks */,
+				7828C61D2365BF1200878001 /* AudioToolbox.framework in Frameworks */,
 				7828C6162365A8BC00878001 /* libavformat.a in Frameworks */,
 				7828C6182365A8CC00878001 /* libavcodec.a in Frameworks */,
 			);
@@ -337,6 +358,20 @@
 			path = libavutil;
 			sourceTree = "<group>";
 		};
+		7828C6192365BEE400878001 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7828C6262365BF9700878001 /* libz.1.1.3.tbd */,
+				7828C6242365BF7D00878001 /* libiconv.2.4.0.tbd */,
+				7828C6222365BF5B00878001 /* libbz2.1.0.tbd */,
+				7828C6202365BF2000878001 /* CoreVideo.framework */,
+				7828C61E2365BF1A00878001 /* CoreMedia.framework */,
+				7828C61C2365BF1200878001 /* AudioToolbox.framework */,
+				7828C61A2365BEE400878001 /* VideoToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		78D2FF892365858200D22CBC = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +380,7 @@
 				78D2FF942365858200D22CBC /* ffmpeg_videoplayer_sample */,
 				78D2FFB02365858400D22CBC /* ffmpeg_videoplayer_sampleTests */,
 				78D2FF932365858200D22CBC /* Products */,
+				7828C6192365BEE400878001 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -682,6 +718,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYV3CSY2F3;
 				INFOPLIST_FILE = ffmpeg_videoplayer_sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -692,7 +729,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.hangyojeong.ffmpeg-videoplayer-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
 			};
 			name = Debug;
@@ -704,6 +741,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYV3CSY2F3;
 				INFOPLIST_FILE = ffmpeg_videoplayer_sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -714,7 +752,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.hangyojeong.ffmpeg-videoplayer-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
 			};
 			name = Release;
