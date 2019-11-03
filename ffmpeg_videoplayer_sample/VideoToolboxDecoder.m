@@ -27,10 +27,93 @@
     int err = 0;
     NAL_UNIT nal_unit = {NULL, 0};
     err = get_video_packet(&nal_unit);
+    
     if(err < 0){
         return err;
     }
     
+    CVPixelBufferRef outputPixelBuffer = NULL;
+    CMBlockBufferRef blockBuffer = NULL;
+    OSStatus status = CMBlockBufferCreateWithMemoryBlock(kCFAllocatorDefault,
+                                                         (void *)nal_unit.nal_buf,
+                                                         nal_unit.nal_size,
+                                                         kCFAllocatorNull,
+                                                         NULL,
+                                                         0,
+                                                         nal_unit.nal_size,
+                                                         0,
+                                                         &blockBuffer);
+    if(status != kCMBlockBufferNoErr){
+        NSLog(@"Error: Creating block buffer failed.");
+        return -1;
+    }
+    
+    CMSampleBufferRef sampleBuffer = NULL;
+    const size_t sampleSizeArray[] = { nal_unit.nal_size };
+    status = CMSampleBufferCreateReady(kCFAllocatorDefault,
+                                       blockBuffer,
+                                       formatDescription,
+                                       1,
+                                       0,
+                                       NULL,
+                                       1,
+                                       sampleSizeArray,
+                                       &sampleBuffer);
+    if(status != kCMBlockBufferNoErr || !sampleBuffer){
+        NSLog(@"Error: Creating sample buffer failed");
+        return -1;
+    }
+    
+    VTDecodeFrameFlags flags = 0;
+    VTDecodeInfoFlags flagOut = 0;
+    status = VTDecompressionSessionDecodeFrame(decompressSession,
+                                               sampleBuffer,
+                                               flags,
+                                               &outputPixelBuffer,
+                                               &flagOut);
+    switch (status) {
+        case noErr:
+            NSLog(@"Decoding one frame succeeded.");
+            break;
+        case kVTInvalidSessionErr:
+            NSLog(@"Error: Invalid session, reset decoder session");
+            break;
+        case kVTVideoDecoderBadDataErr:
+            NSLog(@"Error: decode failed status=%d(Bad data)", status);
+            break;
+        default:
+            NSLog(@"Error: decode failed status=%d", status);
+            break;
+    }
+    
+    CFRelease(sampleBuffer);
+    CFRelease(blockBuffer);
+    
+    if(status == noErr){
+        *pixelBuffer = outputPixelBuffer;
+        return 1;
+    }else{
+        return 0;
+    }
+}
+
+-(void)releaseVideoToolboxDecoder{
+    if(decompressSession){
+        VTDecompressionSessionInvalidate(decompressSession);
+        CFRelease(decompressSession);
+        decompressSession = NULL;
+    }
+    
+    if(formatDescription){
+        CFRelease(formatDescription);
+        formatDescription = NULL;
+    }
+    
+    if(codecpar){
+        av_free(codecpar);
+        codecpar = NULL;
+    }
+    NSLog(@"VideoToolbox Decoder released.");
 }
 
 #pragma mark - VideoToolbox Activity
