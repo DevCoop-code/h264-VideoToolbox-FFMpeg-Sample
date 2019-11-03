@@ -21,6 +21,7 @@
 		7828C64A2365ECF500878001 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C6432365ECF500878001 /* libavutil.a */; };
 		7828C64B2365ECF500878001 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C6442365ECF500878001 /* libswresample.a */; };
 		7828C64C2365ECF500878001 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C6452365ECF500878001 /* libavfilter.a */; };
+		782F6EF2236E5673002F1792 /* AAPLEAGLLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 782F6EF1236E5673002F1792 /* AAPLEAGLLayer.m */; };
 		78692486236D227900FD0D88 /* VideoToolboxDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 78692485236D227900FD0D88 /* VideoToolboxDecoder.m */; };
 		78D2FF972365858200D22CBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D2FF962365858200D22CBC /* AppDelegate.m */; };
 		78D2FF9A2365858200D22CBC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D2FF992365858200D22CBC /* SceneDelegate.m */; };
@@ -177,6 +178,8 @@
 		7828C6432365ECF500878001 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
 		7828C6442365ECF500878001 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
 		7828C6452365ECF500878001 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavfilter.a; sourceTree = "<group>"; };
+		782F6EF0236E5673002F1792 /* AAPLEAGLLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLEAGLLayer.h; sourceTree = "<group>"; };
+		782F6EF1236E5673002F1792 /* AAPLEAGLLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAPLEAGLLayer.m; sourceTree = "<group>"; };
 		78692484236D227900FD0D88 /* VideoToolboxDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoToolboxDecoder.h; sourceTree = "<group>"; };
 		78692485236D227900FD0D88 /* VideoToolboxDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoToolboxDecoder.m; sourceTree = "<group>"; };
 		78D2FF922365858200D22CBC /* ffmpeg_videoplayer_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ffmpeg_videoplayer_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -484,6 +487,8 @@
 				78D2FFBD23658D1F00D22CBC /* FFMpegDemuxer.c */,
 				78692484236D227900FD0D88 /* VideoToolboxDecoder.h */,
 				78692485236D227900FD0D88 /* VideoToolboxDecoder.m */,
+				782F6EF0236E5673002F1792 /* AAPLEAGLLayer.h */,
+				782F6EF1236E5673002F1792 /* AAPLEAGLLayer.m */,
 			);
 			path = ffmpeg_videoplayer_sample;
 			sourceTree = "<group>";
@@ -630,6 +635,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782F6EF2236E5673002F1792 /* AAPLEAGLLayer.m in Sources */,
 				78D2FF9D2365858200D22CBC /* ViewController.m in Sources */,
 				78D2FF972365858200D22CBC /* AppDelegate.m in Sources */,
 				78692486236D227900FD0D88 /* VideoToolboxDecoder.m in Sources */,
