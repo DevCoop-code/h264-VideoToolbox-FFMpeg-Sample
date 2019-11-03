@@ -20,6 +20,10 @@ typedef struct{
 
 int init_ffmpeg_config(const char *input_file_name, int format);
 
+/*
+ [AVCodecParameters]
+ Structer about describing the properties of an encoded stream
+ */
 typedef struct AVCodecParameters AVCodecParameters;
 AVCodecParameters* get_codec_parameters(void);
 

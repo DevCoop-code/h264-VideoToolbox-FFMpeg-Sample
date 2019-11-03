@@ -27,6 +27,10 @@
     int err = 0;
     NAL_UNIT nal_unit = {NULL, 0};
     err = get_video_packet(&nal_unit);
+    if(err < 0){
+        return err;
+    }
+    
 }
 
 #pragma mark - VideoToolbox Activity
