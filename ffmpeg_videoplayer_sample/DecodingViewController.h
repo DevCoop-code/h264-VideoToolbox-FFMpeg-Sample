@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+#import "AAPLEAGLLayer.h"
+#import "VideoToolboxDecoder.h"
+#include "FFMpegDemuxer.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DecodingViewController : UIViewController
+
+- (instancetype)initWithURL: (NSURL *)url;
+
+- (void)closeDecoder;
 
 @end
 
