@@ -28,7 +28,7 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     _glLayer = [[AAPLEAGLLayer alloc]initWithFrame:self.view.bounds];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"" ofType:@""];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Simpsons_Moviemp4" ofType:@"mp4"];
     [self initFFMpegConfigWithPath:path];
     
     err = [self initVideoToolboxDecoder];

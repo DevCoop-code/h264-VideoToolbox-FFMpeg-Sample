@@ -23,6 +23,7 @@
 		7828C64C2365ECF500878001 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7828C6452365ECF500878001 /* libavfilter.a */; };
 		782F6EF2236E5673002F1792 /* AAPLEAGLLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 782F6EF1236E5673002F1792 /* AAPLEAGLLayer.m */; };
 		782F6EF5236E5722002F1792 /* DecodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782F6EF4236E5722002F1792 /* DecodingViewController.m */; };
+		782F6EF8236E5FD2002F1792 /* Simpsons_Moviemp4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 782F6EF7236E5FD2002F1792 /* Simpsons_Moviemp4.mp4 */; };
 		78692486236D227900FD0D88 /* VideoToolboxDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 78692485236D227900FD0D88 /* VideoToolboxDecoder.m */; };
 		78D2FF972365858200D22CBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D2FF962365858200D22CBC /* AppDelegate.m */; };
 		78D2FF9A2365858200D22CBC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D2FF992365858200D22CBC /* SceneDelegate.m */; };
@@ -183,6 +184,7 @@
 		782F6EF1236E5673002F1792 /* AAPLEAGLLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAPLEAGLLayer.m; sourceTree = "<group>"; };
 		782F6EF3236E5722002F1792 /* DecodingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecodingViewController.h; sourceTree = "<group>"; };
 		782F6EF4236E5722002F1792 /* DecodingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecodingViewController.m; sourceTree = "<group>"; };
+		782F6EF7236E5FD2002F1792 /* Simpsons_Moviemp4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Simpsons_Moviemp4.mp4; sourceTree = "<group>"; };
 		78692484236D227900FD0D88 /* VideoToolboxDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoToolboxDecoder.h; sourceTree = "<group>"; };
 		78692485236D227900FD0D88 /* VideoToolboxDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoToolboxDecoder.m; sourceTree = "<group>"; };
 		78D2FF922365858200D22CBC /* ffmpeg_videoplayer_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ffmpeg_videoplayer_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -451,6 +453,14 @@
 			path = libavfilter;
 			sourceTree = "<group>";
 		};
+		782F6EF6236E5F62002F1792 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				782F6EF7236E5FD2002F1792 /* Simpsons_Moviemp4.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		78D2FF892365858200D22CBC = {
 			isa = PBXGroup;
 			children = (
@@ -475,6 +485,7 @@
 		78D2FF942365858200D22CBC /* ffmpeg_videoplayer_sample */ = {
 			isa = PBXGroup;
 			children = (
+				782F6EF6236E5F62002F1792 /* Resources */,
 				78D2FF952365858200D22CBC /* AppDelegate.h */,
 				78D2FF962365858200D22CBC /* AppDelegate.m */,
 				78D2FF982365858200D22CBC /* SceneDelegate.h */,
@@ -620,6 +631,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782F6EF8236E5FD2002F1792 /* Simpsons_Moviemp4.mp4 in Resources */,
 				78D2FFA52365858400D22CBC /* LaunchScreen.storyboard in Resources */,
 				78D2FFA22365858400D22CBC /* Assets.xcassets in Resources */,
 				78D2FFA02365858200D22CBC /* Main.storyboard in Resources */,
